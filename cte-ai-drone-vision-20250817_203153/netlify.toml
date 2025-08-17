@@ -1,23 +1,11 @@
 ﻿[build]
-  publish = "public"
-  functions = "netlify/functions"
-
-[build.environment]
-  NODE_VERSION = "18"
+  publish = "."
+  command = "echo 'No build needed'"
 
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
 
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-XSS-Protection = "1; mode=block"
-    Referrer-Policy = "strict-origin-when-cross-origin"
-
-[[headers]]
-  for = "/static/*"
-  [headers.values]
-    Cache-Control = "max-age=31536000"
+[build.environment]
+  NODE_VERSION = "18"
