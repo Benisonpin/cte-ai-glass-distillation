@@ -1,0 +1,14 @@
+{
+  "name": "cte-ai-drone-vision-distillation",
+  "version": "1.0.0",
+  "description": "CTE AI 無人機影像蒸餾系統",
+  "keywords": [
+    "AI",
+    "無人機",
+    "影像處理",
+    "知識蒸餾",
+    "邊緣計算",
+    "CTE"
+  ],
+  "author": "CTE Group"
+}
