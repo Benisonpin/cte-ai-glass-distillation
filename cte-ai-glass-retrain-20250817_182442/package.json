@@ -1,0 +1,12 @@
+{
+  "name": "cte-ai-glass-retrained",
+  "version": "2.0.0",
+  "description": "CTE AI GLASS蒸餾系統 - 重新訓練版本",
+  "keywords": [
+    "AI",
+    "重新訓練",
+    "知識蒸餾",
+    "CTE"
+  ],
+  "author": "CTE Group"
+}

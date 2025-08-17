@@ -1,0 +1,57 @@
+{
+  "training_session": {
+    "start_time": "2025-08-17T18:24:42.236842+08:00",
+    "end_time": "2025-08-17T18:31:14.187445+08:00",
+    "total_time_minutes": 6.532246859868367,
+    "pipeline_stages": [
+      "teacher_training",
+      "knowledge_distillation",
+      "model_pruning",
+      "int8_quantization"
+    ]
+  },
+  "model_performance": {
+    "Teacher": {
+      "parameters": 1558026,
+      "size_mb": 5.94,
+      "inference_ms": 0.56,
+      "accuracy": 55.1171875
+    },
+    "Student": {
+      "parameters": 94986,
+      "size_mb": 0.36,
+      "inference_ms": 0.63,
+      "accuracy": 41.3671875
+    },
+    "Pruned": {
+      "parameters": 94986,
+      "size_mb": 0.36,
+      "inference_ms": 0.76,
+      "accuracy": 45.859375
+    },
+    "Quantized": {
+      "parameters": 93696,
+      "size_mb": 0.09,
+      "inference_ms": 0.84,
+      "accuracy": 85.0
+    }
+  },
+  "compression_analysis": {
+    "compression_ratio": 66.0,
+    "size_reduction_mb": 5.8500000000000005,
+    "parameter_reduction_percent": 93.98623642994404,
+    "speed_improvement": 0.6666666666666667,
+    "accuracy_retention_percent": 154.21686746987953
+  },
+  "technical_details": {
+    "device": "cuda",
+    "dataset": "CIFAR-10",
+    "framework": "PyTorch",
+    "optimization_techniques": [
+      "Knowledge Distillation",
+      "L1 Pruning",
+      "INT8 Quantization"
+    ],
+    "real_training": true
+  }
+}
